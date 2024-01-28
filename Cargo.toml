@@ -1,0 +1,32 @@
+[package]
+name = "android-ota-extractor"
+version = "1.0.0"
+description = "A tool to extract images from and inspect the payload.bin file from Android OTA zips."
+authors = ["Steven Xu <mail@stevendoesstuffs.dev>"]
+edition = "2021"
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.79"
+autocxx = "0.26.0"
+base64 = "0.21.7"
+binrw = "0.13.3"
+bzip2 = "0.4.4"
+cast = "0.3.0"
+clap = { version = "4.4.18", features = ["derive"] }
+cxx = "1.0.115"
+prost = "0.12.3"
+sha2 = "0.10.8"
+xz2 = "0.1.7"
+
+[build-dependencies]
+autocxx-build = "0.26.0"
+autocxx-engine = "0.26.0"
+cc = "1.0.83"
+miette = { version = "5.10.0", features = ["fancy"] }
+prost-build = "0.12.3"
+
+[dev-dependencies]
+once_cell = "1.19.0"

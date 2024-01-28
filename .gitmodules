@@ -1,0 +1,3 @@
+[submodule "bsdiff"]
+	path = bsdiff
+	url = https://android.googlesource.com/platform/external/bsdiff
